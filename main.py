@@ -22,7 +22,7 @@ async def subscribe(request: Request, email: str = Form(...)):
     return templates.TemplateResponse("thankyou.html", {"request": request, "email": email})
 
 def main():
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("main:app", port=8000, reload=False)
 
 if __name__ == "__main__":
     main()
