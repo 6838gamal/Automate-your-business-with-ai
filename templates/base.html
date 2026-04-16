@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>United Elite Smart Energy</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS -->
+    <link href="/static/img/favicon1.png" rel="icon" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="/static/lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <link href="/static/css/style.css" rel="stylesheet" />
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+    {% include "navbar.html" %}
+
+    {% block content %}{% endblock %}
+
+    {% include "footer.html" %}
+    {% include "modal.html" %}
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/static/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="/static/mail/jqBootstrapValidation.min.js"></script>
+    <script src="/static/mail/contact.js"></script>
+    <script src="/static/js/main.js"></script>
+
+</body>
+</html>
